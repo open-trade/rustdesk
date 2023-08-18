@@ -659,14 +659,14 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v3
 
+      - name: Free Space
+        run: |
+          df -h
+
       - name: Set Swap Space
         uses: pierotofy/set-swap-space@master
         with:
           swap-size-gb: 16
-
-      - name: Free Space
-        run: |
-          df -h
 
       - name: Install Rust toolchain
         uses: actions-rs/toolchain@v1
@@ -809,14 +809,14 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v3
 
+      - name: Free Space
+        run: |
+          df -h
+
       - name: Set Swap Space
         uses: pierotofy/set-swap-space@master
         with:
           swap-size-gb: 16
-
-      - name: Free Space
-        run: |
-          df -h
 
       - name: Install Rust toolchain
         uses: actions-rs/toolchain@v1
@@ -938,14 +938,14 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v3
 
+      - name: Free Space
+        run: |
+          df -h
+
       - name: Set Swap Space
         uses: pierotofy/set-swap-space@master
         with:
           swap-size-gb: 16
-
-      - name: Free Space
-        run: |
-          df -h
 
       - name: Install Rust toolchain
         uses: actions-rs/toolchain@v1
