@@ -666,7 +666,7 @@ jobs:
       - name: Set Swap Space
         uses: pierotofy/set-swap-space@master
         with:
-          swap-size-gb: 14
+          swap-size-gb: 13
 
       - name: Install Rust toolchain
         uses: actions-rs/toolchain@v1
@@ -816,7 +816,7 @@ jobs:
       - name: Set Swap Space
         uses: pierotofy/set-swap-space@master
         with:
-          swap-size-gb: 14
+          swap-size-gb: 13
 
       - name: Install Rust toolchain
         uses: actions-rs/toolchain@v1
@@ -945,7 +945,7 @@ jobs:
       - name: Set Swap Space
         uses: pierotofy/set-swap-space@master
         with:
-          swap-size-gb: 14
+          swap-size-gb: 13
 
       - name: Install Rust toolchain
         uses: actions-rs/toolchain@v1
