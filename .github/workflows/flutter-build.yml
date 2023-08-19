@@ -849,7 +849,7 @@ jobs:
           name: vcpkg-artifact-${{ matrix.job.arch }}
           path: /opt/artifacts/vcpkg/installed
 
-      - uses: uraimo/run-on-arch-action
+      - uses: uraimo/run-on-arch-action@master
         name: Build rustdesk library for ${{ matrix.job.arch }}
         id: vcpkg
         with:
@@ -967,7 +967,7 @@ jobs:
           name: vcpkg-artifact-${{ matrix.job.arch }}
           path: /opt/artifacts/vcpkg/installed
 
-      - uses: uraimo/run-on-arch-action
+      - uses: uraimo/run-on-arch-action@master
         name: Build rustdesk sciter binary for ${{ matrix.job.arch }}
         id: vcpkg
         with:
