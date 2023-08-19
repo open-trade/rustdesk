@@ -81,7 +81,7 @@ jobs:
           sudo rm -rf /usr/local/lib/android
           sudo rm -rf /usr/share/dotnet
           sudo apt update -y
-          sudo apt install qemu-user-static
+          sudo apt install qemu-user-static -y
 
       - name: Checkout source code
         uses: actions/checkout@v3
@@ -206,7 +206,7 @@ jobs:
           sudo rm -rf /usr/local/lib/android
           sudo rm -rf /usr/share/dotnet
           sudo apt update -y
-          sudo apt install qemu-user-static
+          sudo apt install qemu-user-static -y
 
       - name: Checkout source code
         uses: actions/checkout@v3
