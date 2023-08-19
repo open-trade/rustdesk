@@ -33,7 +33,11 @@ env:
   UPLOAD_ARTIFACT: "${{ inputs.upload-artifact }}"
   CARGO_INCREMENTAL: "0"
 
-jobs:
+jobs:  
+  build-vcpkg-deps-linux:
+    uses: ./.github/workflows/vcpkg-deps-linux.yml  
+  generate-bridge-linux:
+    uses: ./.github/workflows/bridge.yml
   build-rustdesk-lib-linux-arm:
     if: ${{ inputs.upload-artifact }}
     needs: [generate-bridge-linux, build-vcpkg-deps-linux]
