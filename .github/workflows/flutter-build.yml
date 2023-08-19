@@ -667,7 +667,7 @@ jobs:
       - name: Set Swap Space
         uses: pierotofy/set-swap-space@master
         with:
-          swap-size-gb: 13
+          swap-size-gb: 13.99
 
       - name: Install Rust toolchain
         uses: actions-rs/toolchain@v1
@@ -817,7 +817,7 @@ jobs:
       - name: Set Swap Space
         uses: pierotofy/set-swap-space@master
         with:
-          swap-size-gb: 13
+          swap-size-gb: 13.99
 
       - name: Install Rust toolchain
         uses: actions-rs/toolchain@v1
@@ -849,7 +849,7 @@ jobs:
           name: vcpkg-artifact-${{ matrix.job.arch }}
           path: /opt/artifacts/vcpkg/installed
 
-      - uses: rustdesk-org/run-on-arch-action@amd64-support
+      - uses: uraimo/run-on-arch-action
         name: Build rustdesk library for ${{ matrix.job.arch }}
         id: vcpkg
         with:
@@ -946,7 +946,7 @@ jobs:
       - name: Set Swap Space
         uses: pierotofy/set-swap-space@master
         with:
-          swap-size-gb: 13
+          swap-size-gb: 13.99
 
       - name: Install Rust toolchain
         uses: actions-rs/toolchain@v1
@@ -967,7 +967,7 @@ jobs:
           name: vcpkg-artifact-${{ matrix.job.arch }}
           path: /opt/artifacts/vcpkg/installed
 
-      - uses: rustdesk-org/run-on-arch-action@amd64-support
+      - uses: uraimo/run-on-arch-action
         name: Build rustdesk sciter binary for ${{ matrix.job.arch }}
         id: vcpkg
         with:
